@@ -1,0 +1,9 @@
+.git
+.github
+.env
+.env.*
+!.env.example
+*.session
+runtime/media
+__pycache__
+.pytest_cache

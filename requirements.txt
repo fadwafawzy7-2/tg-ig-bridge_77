@@ -1,0 +1,22 @@
+# --- Web framework ---
+fastapi==0.115.0
+uvicorn[standard]==0.30.6
+
+# --- Configuration ---
+pydantic==2.9.2
+pydantic-settings==2.5.2
+python-dotenv==1.0.1
+
+# --- Database ---
+SQLAlchemy==2.0.35
+asyncpg==0.29.0          # async driver, used by the running app
+psycopg2-binary==2.9.9   # sync driver, used by Alembic migrations
+alembic==1.13.3
+
+# --- Telegram (Phase 3) ---
+Telethon==1.36.0         # MTProto user-session client (needed for history backfill)
+
+# --- AI captioning (Phase 5) ---
+httpx==0.27.2             # Groq Chat Completions API client (app/ai/ai_client.py)
+
+boto3==1.40.24
